@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  </head>
+  <body class="screen">
+   
+    <div class="row1">
+        <div class="r1c1 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3"></div>
+        <div class="r1c2 col-xl-10 col-md-10 col-sm-10 col-9">
+            <div style="font-weight: bold; font-size: 25px;"  class="row col-lg-12 col-sm-12 col-md-12 col-12"><h1 id="title">Update Form</h1></div>
+            <div style="font-weight: bold;"  class="row col-lg-12 col-sm-12 col-md-12 col-12 mt-1"><p id="description">This is a Dom-Form Updation. please fill
+                in all your details and updates the form and please select minimum of two food choices.</p>
+            </div>
+            <div class="row3 mt-4">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <form id="form">
+                        <div class="form-group">
+                        <label style="font-weight: bold;" for="first-name">First Name</label>
+                        <br>
+                        <input class="mt-1" type="text" id="first-name" required placeholder="Enter your FirstName">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <form id="form">
+                        <div class="form-group">
+                        <label style="font-weight: bold;" for="last-name">Last Name</label>
+                        <br>
+                        <input class="mt-1" type="text" id="last-name" required placeholder="Enter Your LastName">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row4 mt-2">
+                <form id="form">
+                    <div class="form-group">
+                    <label style="font-weight: bold;" for="address">Address</label><br>
+                    <div class="address">
+                    <textarea id="address" class="mt-1" rows="3" cols="50" placeholder="Enter Full Address"></textarea>
+                    </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row5 mt-2">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <form id="form">
+                        <label style="font-weight: bold;" for="state">State</label><br>
+                        <input class="mt-1" type="text" id="state" placeholder="Enter your State">
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <form id="form">
+                        <label style="font-weight: bold;" for="country">Country</label><br>
+                        <input class="mt-1" type="text" id="country" placeholder="Enter Your Country">
+                    </form>
+                </div>
+            </div>
+            <div class="row6 mt-2">
+                <div class="col-lg-6 col-md-6 col-sm-6  col-6">
+                    <form id="form">
+                        <div class="form-group">
+                        <label style="font-weight: bold;" for="pincode">Pincode</label>
+                        <br>
+                        <input required id="pincode" type="text" placeholder="Enter Your Pincode" class="mt-1">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <form id="form">
+                              <label style="font-weight: bold;">Gender</label>  
+                              <div>             
+                            <input type="radio" id="male" name="gender" value="male"><label style="font-weight: bold;" for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female"><label style="font-weight: bold;" for="female">Female</label>
+                            <input type="radio" id="other" name="gender" value="other"><label style="font-weight: bold;" for="other">other</label>
+                            </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row7">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <form id="form">
+                        <label style="font-weight: bold;" class="mt-2">Choice of Food:</label>
+                        <div>
+                            <ul>
+                                <li><input type="checkbox" id="indian" name="foods" value="indian"><label style="font-weight: bold;" for="indian">Indian</label></li>
+                                <li><input type="checkbox" id="thai" name="foods" value="thai"><label style="font-weight: bold;" for="thai">Thai</label></li>
+                                <li><input type="checkbox" id="mexican" name="foods" value="mexican"><label style="font-weight: bold;" for="mexican">Mexican</label></li>
+                                <li><input type="checkbox" id="italian" name="foods" value="italian"><label style="font-weight: bold;" for="italian">Itialian</label></li>
+                                <li><input type="checkbox" id="chinese" name="foods" value="chinese"><label style="font-weight: bold;" for="chinese">Chinese</label></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row8">
+                <form id="form">
+                  <div class="form-group">
+                    <input class="btn btn-primary mb-3" id="submit" type="button" onclick="add()" value="Submit">
+                  </div>
+                </form> 
+            </div>
+            <div class="row col-lg-12 col-md-12 col-sm-12 col-6">
+                <table id="table-ins">
+                    <tr>
+                        <th required>FirstName</th>
+                        <th>LastName</th>
+                        <th>Address</th>
+                        <th>State</th>
+                        <th>Country</th>
+                        <th>Pincode</th>
+                        <th>Gender</th>
+                        <th>Food</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
